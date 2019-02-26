@@ -23,7 +23,7 @@ turtle.write("꼬북꼬북")
 # 앞으로 80 이동 [foward(이동거리)] or [fd(이동거리)]
 turtle.forward(80)
 
-turtle.color('black','green')
+turtle.color('black', 'green')
 turtle.stamp()  #도장찍기
 
 # 펜 내려주세요 [pendown()] or [pd()]
