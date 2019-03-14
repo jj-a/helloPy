@@ -27,7 +27,7 @@ for tr in table.find_all('tr'):      # 모든 <tr> 태그를 찾아서 반복(�
             humidity = tds[9].text       # <td> 태그 리스트의 열 번째(인덱스 9)에서 습도를 가져옴
             data.append([point, temperature, humidity])    # data 리스트에 지점, 기온, 습도를 추가
 
-with open('nowWeather.csv', 'w') as file:    # weather.csv 파일을 쓰기 모드로 열기
+with open('nowWeather.csv', 'w', encoding='euc-kr') as file:    # weather.csv 파일을 쓰기 모드로 열기
     file.write('point,temperature,humidity\n')                  # 컬럼 이름 추가
     for i in data:                                              # data를 반복하면서
         file.write('{0},{1},{2}\n'.format(i[0], i[1], i[2]))    # 지점,온도,습도를 줄 단위로 저장

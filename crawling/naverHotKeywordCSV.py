@@ -21,4 +21,4 @@ for li in soup.select('#PM_ID_ct > div.header > div.section_navbar > div.area_ho
     print(rank, search_word)
     df = df.append(Series([rank, search_word], index=columns), ignore_index=True)
 
-df.to_csv(r'result.csv', index=False, encoding='utf-8')
+df.to_csv(r'naverHotKeyword.csv', index=False, encoding='euc-kr')
