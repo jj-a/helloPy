@@ -12,7 +12,7 @@ path = "D:/develop/download/Library/python_webdriver/chromedriver.exe"
 driver = webdriver.Chrome(path)
 url = 'https://www.nga.gov/collection/artists.html'
 driver.get(url)
-time.sleep(3)
+time.sleep(5)  # 동작 지연 (페이지 로딩 소요시간에 따라 sleep값을 늘려야할 수 있음)
 text = driver.page_source
 # print(text)
 soup = BeautifulSoup(text, 'html.parser')
@@ -21,8 +21,9 @@ for li in soup.select('#returns > li'):
     title = ''
     lifespan = ''
     description = ''
+    # 페이지 로딩 소요시간이 길어지면 아랫줄에서 AttributeError: 'NoneType' 발생
     if li.dl.select_one('dt[class="title"]'):
-        title = li.dl.select_one('dt[class="title"]').text  # ***Error***
+        title = li.dl.select_one('dt[class="title"]').text
     if li.dl.select_one('dd[class="lifespan"]'):
         lifespan = li.dl.select_one('dd[class="lifespan"]').text
     if li.dl.select_one('dd[class="description"]'):

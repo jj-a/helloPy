@@ -1,4 +1,4 @@
-# 아티스트(예술가) 찾기 (웹 브라우저 네트워크 메뉴
+# 아티스트(예술가) 찾기 (웹 브라우저 네트워크 메뉴)
 
 # National Gallery of Art
 # Site :  https://www.nga.gov/collection/artists.html

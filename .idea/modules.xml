@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../helloPy/.idea/helloPy.iml" filepath="$PROJECT_DIR$/../helloPy/.idea/helloPy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Deep-Learning-Google-Chrome-Dinosaur-Game-master/.idea/Deep-Learning-Google-Chrome-Dinosaur-Game-master.iml" filepath="$PROJECT_DIR$/../Deep-Learning-Google-Chrome-Dinosaur-Game-master/.idea/Deep-Learning-Google-Chrome-Dinosaur-Game-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/helloPy.iml" filepath="$PROJECT_DIR$/.idea/helloPy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../machineLearning/.idea/machineLearning.iml" filepath="$PROJECT_DIR$/../machineLearning/.idea/machineLearning.iml" />
     </modules>
   </component>
 </project>
